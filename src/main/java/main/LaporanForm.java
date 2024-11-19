@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package main;
-
+import javax.swing.JFrame;
 /**
  *
  * @author user
@@ -15,6 +15,7 @@ public class LaporanForm extends javax.swing.JFrame {
      */
     public LaporanForm() {
         initComponents();
+        this.setExtendedState(JFrame.MAXIMIZED_BOTH);
     }
 
     /**
