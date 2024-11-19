@@ -132,7 +132,9 @@ public class HomePanel extends javax.swing.JFrame {
 
     private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
         // TODO add your handling code here:
-        
+        LaporanForm laporan = new LaporanForm();
+        laporan.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_jToggleButton1ActionPerformed
 
     /**
