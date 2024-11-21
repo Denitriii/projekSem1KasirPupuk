@@ -4,6 +4,8 @@
  */
 package main;
 
+import javax.swing.JFrame;
+
 /**
  *
  * @author user
@@ -15,6 +17,7 @@ public class LaporanPengeluaran extends javax.swing.JFrame {
      */
     public LaporanPengeluaran() {
         initComponents();
+        this.setExtendedState(JFrame.MAXIMIZED_BOTH);
     }
 
     /**
