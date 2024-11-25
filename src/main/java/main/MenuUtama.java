@@ -5,7 +5,7 @@
 package main;
 
 import java.awt.Color;
-import menuPanel.MenuLapharian;
+import menuPanel.menuLapharian;
 
 /**
  *
@@ -228,6 +228,9 @@ public class MenuUtama extends javax.swing.JFrame {
         btn_transaksi.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
         btn_transaksi.setText("Transaksi");
         btn_transaksi.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_transaksiMouseClicked(evt);
+            }
             public void mouseEntered(java.awt.event.MouseEvent evt) {
                 btn_transaksiMouseEntered(evt);
             }
@@ -624,12 +627,13 @@ public class MenuUtama extends javax.swing.JFrame {
     }//GEN-LAST:event_btn_dashboardMouseClicked
 
     private void btn_lapHarianMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_lapHarianMouseClicked
-        
-        
+        pn_lapharian.setBackground(new Color(240,240,240));
+        pn_klik3.setBackground(new Color(0,0,0));
+        //untuk memangill panel laporan harian
         pn_konten.removeAll();
-        pn_konten.add(new MenuLapharian());
+        pn_konten.add(new menuLapharian());
         pn_konten.repaint();
-        pn_konten.revalidate();
+        pn_konten.revalidate(); 
     }//GEN-LAST:event_btn_lapHarianMouseClicked
 
     private void btn_lapHarianMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_lapHarianMouseEntered
@@ -675,6 +679,16 @@ public class MenuUtama extends javax.swing.JFrame {
         pn_lapbulanan.setBackground(new Color(250,250,250));
         pn_klik5.setBackground(new Color(250,250,250));
     }//GEN-LAST:event_btn_lapbulananMouseExited
+
+    private void btn_transaksiMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_transaksiMouseClicked
+        pn_transaksi.setBackground(new Color(240,240,240));
+        pn_klik2.setBackground(new Color(0,0,0));
+        //
+        pn_konten.removeAll();
+        pn_konten.add(new transaksi());
+        pn_konten.repaint();
+        pn_konten.revalidate();
+    }//GEN-LAST:event_btn_transaksiMouseClicked
 
     /**
      * @param args the command line arguments
